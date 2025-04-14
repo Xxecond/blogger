@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; URL=/" />
+    <meta charset="UTF-8" />
+    <script>
+      
+      const redirectTo = '/' + location.pathname.slice(1);
+      window.location.replace('/blogger/?redirect=' + encodeURIComponent(redirectTo));
+    </script>
   </head>
   <body></body>
 </html>
