@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+      const repoName = 'blogger';
+      const segments = window.location.pathname.split('/');
+      const repoIndex = segments.indexOf(repoName);
+      
+      if (repoIndex > -1) {
+        const path = segments.slice(repoIndex + 1).join('/');
+        window.location.replace(window.location.origin + '/' + repoName + '/#' + path);
+      } else {
+        window.location.replace(window.location.origin + '/' + repoName);
+      }
+    </script>
+  </head>
+  <body>
+    Redirecting to blogger...
+  </body>
+</html>
