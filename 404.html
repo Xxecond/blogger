@@ -4,18 +4,15 @@
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script>
-  const pathSegments = window.location.pathname.split('/');
-  const repoIndex = pathSegments.indexOf('blogger');
-  const path = repoIndex > -1 ? pathSegments.slice(repoIndex + 1).join('/') : '';
-  
-  if (!sessionStorage.redirected) {
-    sessionStorage.redirected = 'true';
-    sessionStorage.redirect = '/' + path;
-    window.location.replace(window.location.origin + '/blogger/');
-  }
-  </script>
+      const pathSegments = window.location.pathname.split('/');
+      const repoIndex = pathSegments.indexOf('blogger');
+      const path = repoIndex > -1 ? pathSegments.slice(repoIndex + 1).join('/') : '';
+      
+      sessionStorage.redirect = '/' + path;
+      window.location.replace(window.location.origin + '/blogger/');
+    </script>
   </head>
   <body>
-    Redirecting to Blogger...
+    Redirecting to main page...
   </body>
 </html>
