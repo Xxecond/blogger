@@ -1,4 +1,3 @@
-
  function SearchBar({ setSearchTerm }) {
     return (
       <div className="search">
