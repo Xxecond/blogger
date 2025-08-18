@@ -53,7 +53,7 @@ body.nav-open {
 }
 
 .heading {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   display: flex;
   padding-left: 20px;
   height: 8vh;
@@ -147,8 +147,7 @@ transition:transform 0.3s ease;
   height:20%;
   margin-top:8rem;
   display:block;
-  animation: slideinleft 1s ease forwards;
- 
+  animation: slideinleft 1s ease forwards; 
 }
 
 .slidein a {
@@ -165,18 +164,6 @@ transition:transform 0.3s ease;
  animation: none;
 }
 
-.nav-menu {
-  width: 74%;
-  margin: 0 auto;
-}
-
-.slidein {
-  height:20%;
-  margin-top:8rem;
-  display:block;
-  animation: slideinleft 1s ease forwards;
-}
-
 .nav-menu ul {
   list-style: none !important;
   padding: 15px;
@@ -187,10 +174,9 @@ transition:transform 0.3s ease;
   display:block;
   list-style: none !important;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   transition: all 0.2s ease-in-out;
 }
-
 
 .nav-menu li {
   margin-bottom: 13px;
@@ -295,7 +281,7 @@ body.nav-open .handle span::after {
   color: #fff;
   font-weight: lighter;
   font-family: 'Segoe ui';
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   border-radius: 10px;
   margin: 0 20px;
   min-height: 3em;
@@ -309,10 +295,10 @@ body.nav-open .handle span::after {
 
 .view-more, .view-less {
   color: royalblue;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   position: absolute;
   right: 1px;
-  bottom: 1px;
+  bottom: -2px;
   background: #333;
   padding-left: 5px;
 }
@@ -324,7 +310,7 @@ body.nav-open .handle span::after {
 }
 
 .blog-card h2 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   text-align: center;
   padding-bottom: 10px;
   padding-top:7rem;
@@ -343,7 +329,7 @@ body.nav-open .handle span::after {
 
 .blog-actions a {
   color: deepskyblue;
-  font-size: 2rem;
+  font-size: 1.7rem;
   padding: 0 10px;
   padding-top:3px;
 }
@@ -354,7 +340,7 @@ body.nav-open .handle span::after {
 }
 
 .blog-actions button {
-  font-size: 2rem;
+  font-size: 1.7rem;
   background-color: red;
  padding:1px;
   cursor: pointer;
@@ -418,7 +404,7 @@ margin:7px auto;
 .title,
 .content,
 .image-upload {
-  font-size: 2rem;
+  font-size: 1.8rem;
   display: flex;
   height: 4rem;
   width: 90%;
@@ -447,7 +433,7 @@ margin:7px auto;
   height: 5rem;
   align-items: center;
   display: flex;
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 15px;
   background-color: lightgray;
   margin: 67px auto;
@@ -462,13 +448,14 @@ margin:7px auto;
 }
 
 .footer {
-  font-size: 1.6rem;
+  font-size: 1rem;
   min-height: 7vh;
   color: white;
   background-color: #333;
   width: 100%;
   align-items: center;
   position: relative;
+  bottom:0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -485,8 +472,9 @@ margin:7px auto;
 }
 
 .about {
+  height:90vh;
   width: 100%;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -517,7 +505,7 @@ strong {
 }
 
 h6 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 1rem 0;
 }
 
@@ -537,7 +525,7 @@ p {
   padding-top: 60px;
   display: grid;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
 }
 
@@ -545,7 +533,7 @@ p {
   text-decoration: none;
   padding: 15px;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   color: white;
   display: inline-block;
 }
@@ -566,8 +554,9 @@ p {
   padding-top:51rem;
   text-align: center;
   color:white;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
+
 .version::before{
   content:'';
   width: 100%;
@@ -615,3 +604,42 @@ p {
   
 }
 
+/*tablet screen sizin*/ /*mobile screen sizin*/
+@media(max-width:1023px){
+.heading {
+  font-size: 1.2rem;
+}
+
+.about {
+  font-size: 1.2rem;
+ }
+
+ strong {
+  font-size: 1.2rem;
+}
+
+h6 {
+ 1.2rem; 
+}
+
+
+.blog-actions a {
+  color: deepskyblue;
+  font-size: 1.5rem;
+  padding: 0 10px;
+  padding-top:3px;
+}
+
+.blog-actions button {
+  font-size: 1.5rem;
+}
+
+.blog-content {
+  font-size: 1.2rem;
+}
+
+
+.nav-menu a {
+  font-size: 1.3rem;
+}
+}
