@@ -1,11 +1,6 @@
-import React from 'react';
-
-function Footer() {
-  return (
-    <footer>
-      <div className="footer">&copy;
-        AndrewsAmpadu2024 | All Rights Reserved</div>
-    </footer>
-  )
+const Footer =()=>{ 
+    return(<>
+    <footer className="footer">&copy; AndrewsAmpadu2024 | All Rights Reserved</footer>;
+    </>)
 }
 export default Footer;
